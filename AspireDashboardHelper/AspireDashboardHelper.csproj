@@ -2,8 +2,16 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <EnablePackageValidation>true</EnablePackageValidation>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Company></Company>
+    <Authors>Simon Foster</Authors>
+    <Description>A helper library for adding the Aspire Dashboard docker image to your projects.</Description>
+    <PackageTags>library, open-telemetry</PackageTags>
+    <PackageProjectUrl>https://github.com/funkysi1701/AspireDashboardHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/funkysi1701/AspireDashboardHelper</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +19,37 @@
     <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.8.0" />
     <PackageReference Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="1.0.0-beta.10" />
     <PackageReference Include="SharpAbp.Abp.OpenTelemetry.Exporter.Prometheus.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="DotNet.ReproducibleBuilds" Version="1.1.1" />
   </ItemGroup>
 
+  <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Add a README.md next to the csproj -->
+    <None Include="..\README.md" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.txt" Pack="true" PackagePath="" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+        Add an icon.png next to the csproj:
+        - Supported format: png, jpg
+        - Recommended dimensions: 128x128
+        - Maximum size: 1MB
+    -->
+    <None Include="icon.png" Pack="true" PackagePath="" />
+  </ItemGroup>
 </Project>
