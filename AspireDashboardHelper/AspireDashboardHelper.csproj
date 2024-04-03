@@ -4,6 +4,11 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Company></Company>
+    <Authors>Simon Foster</Authors>
+    <Description>A helper library for adding the Aspire Dashboard docker image to your projects.</Description>
+    <PackageTags>library</PackageTags>
+    <PackageProjectUrl>https://github.com/funkysi1701/AspireDashboardHelper</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +16,14 @@
     <PackageReference Include="OpenTelemetry.Exporter.OpenTelemetryProtocol" Version="1.8.0" />
     <PackageReference Include="OpenTelemetry.Instrumentation.EntityFrameworkCore" Version="1.0.0-beta.10" />
     <PackageReference Include="SharpAbp.Abp.OpenTelemetry.Exporter.Prometheus.AspNetCore" Version="3.2.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
   </ItemGroup>
 
 </Project>
