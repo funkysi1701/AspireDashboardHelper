@@ -8,6 +8,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{13CD3344-0AC1-4F6B-9453-25A96FB1E462}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		global.json = global.json
+		README.md = README.md
+		renovate.json = renovate.json
 	EndProjectSection
 EndProject
 Global
