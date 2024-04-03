@@ -9,7 +9,7 @@
     <Company></Company>
     <Authors>Simon Foster</Authors>
     <Description>A helper library for adding the Aspire Dashboard docker image to your projects.</Description>
-    <PackageTags>library</PackageTags>
+    <PackageTags>library, open-telemetry</PackageTags>
     <PackageProjectUrl>https://github.com/funkysi1701/AspireDashboardHelper</PackageProjectUrl>
     <RepositoryUrl>https://github.com/funkysi1701/AspireDashboardHelper</RepositoryUrl>
   </PropertyGroup>
@@ -27,7 +27,7 @@
 
   <ItemGroup>
     <!-- Add a README.md next to the csproj -->
-    <None Include="README.md" Pack="true" PackagePath=""/>
+    <None Include="..\README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <PropertyGroup>
@@ -35,7 +35,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
+    <None Include="LICENSE.txt" Pack="true" PackagePath="" />
   </ItemGroup>
 
   <PropertyGroup>
@@ -49,6 +49,6 @@
         - Recommended dimensions: 128x128
         - Maximum size: 1MB
     -->
-    <None Include="icon.png" Pack="true" PackagePath=""/>
+    <None Include="icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
 </Project>
