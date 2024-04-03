@@ -11,8 +11,15 @@ using OpenTelemetry.Trace;
 
 namespace AspireDashboardHelper;
 
+/// <summary>
+/// Extension Methods for setting up OpenTelemetry Logging and Monitoring that can be consumed by an Aspire Dashboard
+/// </summary>
 public static class Extensions
 {
+    /// <summary>
+    /// Set Up OpenTelemetry Logging
+    /// </summary>
+    /// <param name="builder"></param>
     public static void AddOldOpenTel(this WebApplicationBuilder builder)
     {
         builder.Logging.AddOpenTelemetry(logging =>
@@ -41,6 +48,11 @@ public static class Extensions
         }
     }
 
+    /// <summary>
+    /// Set Up OpenTelemetry Logging
+    /// </summary>
+    /// <param name="builder"></param>
+    /// <param name="resourceBuilderFunc"></param>
     public static void AddCommonOTelLogging(this WebApplicationBuilder builder, Func<ResourceBuilder> resourceBuilderFunc)
     {
         builder.Logging.ClearProviders();
@@ -60,6 +72,13 @@ public static class Extensions
         });
     }
 
+    /// <summary>
+    /// Set Up OpenTelemetry Monitoring
+    /// </summary>
+    /// <param name="builder"></param>
+    /// <param name="ServiceName"></param>
+    /// <param name="ServiceVersion"></param>
+    /// <param name="ActivitySourceName"></param>
     public static void AddCommonOTelMonitoring(this WebApplicationBuilder builder, string ServiceName, string ServiceVersion, string ActivitySourceName)
     {
         builder.Services.AddOpenTelemetry()
