@@ -4,6 +4,9 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Company>funkysi1701</Company>
+    <Authors>funkysi1701</Authors>
+    <Description>A helper library for adding the Aspire Dashboard docker image to your projects.</Description>
   </PropertyGroup>
 
   <ItemGroup>
