@@ -65,7 +65,7 @@ public static class Extensions
         builder.Services.AddOpenTelemetry()
             .ConfigureResource(r =>
             {
-                r.AddService(ServiceName, serviceVersion: ServiceVersion, serviceInstanceId: ServiceName);
+                r.AddService(ServiceName, serviceVersion: ServiceVersion, serviceInstanceId: $"{ServiceName} {Guid.NewGuid().ToString()}");
                 r.AddAttributes(new Dictionary<string, object>
                 {
                     ["host.name"] = Environment.MachineName,
