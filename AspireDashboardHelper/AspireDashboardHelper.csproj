@@ -2,6 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
+    <EnablePackageValidation>true</EnablePackageValidation>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Company></Company>
@@ -9,6 +11,7 @@
     <Description>A helper library for adding the Aspire Dashboard docker image to your projects.</Description>
     <PackageTags>library</PackageTags>
     <PackageProjectUrl>https://github.com/funkysi1701/AspireDashboardHelper</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/funkysi1701/AspireDashboardHelper</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -19,6 +22,15 @@
   </ItemGroup>
 
   <PropertyGroup>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Add a README.md next to the csproj -->
+    <None Include="README.md" Pack="true" PackagePath=""/>
+  </ItemGroup>
+
+  <PropertyGroup>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
@@ -26,4 +38,17 @@
     <None Include="LICENSE.txt" Pack="true" PackagePath=""/>
   </ItemGroup>
 
+  <PropertyGroup>
+    <PackageIcon>icon.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+        Add an icon.png next to the csproj:
+        - Supported format: png, jpg
+        - Recommended dimensions: 128x128
+        - Maximum size: 1MB
+    -->
+    <None Include="icon.png" Pack="true" PackagePath=""/>
+  </ItemGroup>
 </Project>
