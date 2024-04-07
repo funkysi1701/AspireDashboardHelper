@@ -15,7 +15,7 @@ Add the following settings to your appsettings.json file
 
 ```json 
 "AspireDashboard": "http://localhost:18889/",//The URL to send data to the Aspire Dashboard
-"env": "Dev",//The environment of your application
+"env": "Dev",//The environment of your application eg Dev, Test, Prod etc
 "BuildNumber": "",//The build or version number of your application
 ```
 
@@ -34,3 +34,5 @@ To run the Aspire Dashboard from a docker compose file you can use the following
 
 - localhost:18888 will be the URL of the Aspire Dashboard
 - localhost:18889 will be the URL your application uses to send OpenTelemetry data to the Aspire Dashboard
+
+An example of how to use the Aspire Dashboard can be found https://learn.microsoft.com/en-us/samples/dotnet/aspire-samples/aspire-standalone-dashboard/
