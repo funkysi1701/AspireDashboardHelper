@@ -1,4 +1,4 @@
-Aspire Dashboard Helper
+# Aspire Dashboard Helper
 
 The Aspire Dashboard Helper is a library that helps you to add OpenTelemetry to your application and send the data to an Aspire Dashboard running via docker.
 
