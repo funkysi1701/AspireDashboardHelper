@@ -2,6 +2,8 @@
 
 The Aspire Dashboard Helper is a library that helps you to add OpenTelemetry to your application and send the data to an Aspire Dashboard running via docker.
 
+[![NuGet](https://img.shields.io/nuget/v/AspireDashboardHelper.svg)](https://www.nuget.org/packages/AspireDashboardHelper) ![NuGet](https://img.shields.io/nuget/dt/AspireDashboardHelper.svg)
+
 Add the following code to your program.cs file
 
 ```csharp
