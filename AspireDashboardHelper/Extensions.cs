@@ -88,6 +88,9 @@ public static class Extensions
                 r.AddAttributes(new Dictionary<string, object>
                 {
                     ["host.name"] = Environment.MachineName,
+                    ["app.name"] = ServiceName,
+                    ["cluster.name"] = "test",
+                    ["namespace"] = "test",
                     ["deployment.environment"] = builder.Configuration.GetValue<string>("env") ?? string.Empty,
                     ["deployment.version"] = ServiceVersion,
                 });
